@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Noto Serif';
+    src: url(/Fonts/NotoSerif-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Ancizar Serif';
+    src: url(/Fonts/AncizarSerif-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 700;
+    font-style: normal; /* Normal style */
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    src: url(/Fonts/PTSerif-Regular.ttf) format('truetype');
+} 

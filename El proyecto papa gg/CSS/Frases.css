@@ -1,0 +1,86 @@
+    /* =========================
+    BLOQUES PRINCIPALES
+   ========================= */
+.frases-bloque {
+    margin-bottom: 48px;
+}
+
+    /* =========================
+    TÍTULOS DE FILÓSOFOS
+  ========================= */
+.frases-filosofo-titulo {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    color: #BC4749;
+    margin: 40px 0 18px 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px #fff, 0 0 2px #BC4749;
+    scroll-margin-top: 90px; /* Ajusta según la altura de tu navbar */
+}
+
+    /* =========================
+    CONTENEDOR DE CARTAS
+   ========================= */
+.frases-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    justify-items: center;
+    margin: 0;
+}
+
+    /* =========================
+    CARTAS DE FRASES
+   ========================= */
+.frase-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 32px 24px;
+    max-width: 350px;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frase-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.18);
+}
+
+    /* =========================
+    IMAGEN DE LA FRASE
+   ========================= */
+.frase-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+    /* =========================
+    TEXTO Y AUTOR DE LA FRASE
+   ========================= */
+.frase-texto {
+    font-size: 1.15em;
+    font-family: 'Noto Serif', serif;
+    color: #222;
+    text-align: center;
+    margin: 0;
+}
+
+.frase-autor {
+    display: block;
+    margin-top: 14px;
+    font-size: 1em;
+    color: #BC4749;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.85;
+}

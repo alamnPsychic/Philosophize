@@ -1,0 +1,73 @@
+    /* =========================
+    SLICES DE CURIOSIDADES
+   ========================= */
+.curiosidad-slice,
+.curiosidad-slice.reverse {
+    display: flex;                /* Usa flexbox para alinear hijos en fila */
+    align-items: center;          /* Centra verticalmente los hijos */
+    justify-content: center;      /* Centra horizontalmente los hijos */
+    background: #fff;           
+    border-radius: 18px;          /* Bordes redondeados */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10); /* Sombra suave */
+    margin: 40px auto;            
+    max-width: 1000px;            
+    padding: 32px 24px;           
+    gap: 40px;                    /* Espacio entre hijos */
+    flex-wrap: nowrap;            /* No permite que los hijos se bajen a otra línea */
+    transition: box-shadow 0.2s;  /* Transición suave de sombra */
+}
+
+/* Invierte el orden de los hijos (imagen a la derecha) */
+.curiosidad-slice.reverse {
+    flex-direction: row-reverse;  /* Invierte la dirección de flex */
+}
+
+    /* =========================
+    IMAGEN DE CURIOSIDAD
+   ========================= */
+.curiosidad-img-container {
+    flex: 1 1 220px;              /* Ocupa 1 parte flexible, base 220px */
+    display: flex;                /* Flex para centrar la imagen */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente */
+}
+
+.curiosidad-img {
+    width: 220px;                 
+    height: 220px;                
+    object-fit: cover;            /* La imagen cubre el área sin deformarse */
+    border-radius: 18px;          /* Bordes redondeados */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12); /* Sombra suave */
+    background: #eee;             /* Fondo gris claro si la imagen no carga */
+}
+
+    /* =========================
+    TEXTO 
+   ========================= */
+.curiosidad-texto {
+    flex: 2 1 340px;              /* Ocupa 2 partes flexibles, base 340px */
+    display: flex;                /* Flex para organizar el texto */
+    flex-direction: column;       /* Apila los hijos verticalmente */
+    justify-content: center;      /* Centra verticalmente el contenido */
+    align-items: flex-start;      /* Alinea el texto a la izquierda */
+    min-width: 260px;             
+}
+
+.curiosidad-titulo {
+    font-family: 'Noto Serif', serif; 
+    color: #BC4749;                   
+    font-size: 2em;                   
+    margin-bottom: 12px;              /* Espacio debajo */
+}
+
+.curiosidad-descripcion {
+    font-family: 'Ancizar Serif', serif; 
+    font-size: 1.2em;                   
+    color: #222;                        
+    line-height: 1.6;                   
+    margin: 0;                           
+}
+
+.curiosidad-slice {
+    scroll-margin-top: 90px; /* Deja espacio arriba al navegar con #Curiosidad-... */
+}
